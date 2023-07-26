@@ -1,4 +1,4 @@
-name: N1-OpenWrt-Lede
+name: openwrtN1
 
 
 on:
@@ -119,9 +119,9 @@ jobs:
         artifacts: ${{ env.PACKAGED_OUTPUTPATH }}/*
         token: ${{ secrets.RELEASES_TOKEN }}
         body: |
-          N1 OpenWrt 精简版本
+          N1 OpenWrt Argon
                                     
-            * 默认IP：192.168.1.200
+            * IP：10.0.0.1
             默认用户名：root
             默认密码：password
             安装到EMMC及在线更新：系统-->晶晨宝盒
