@@ -61,9 +61,9 @@ jobs:
         echo "DATE=$(date "+%Y-%m-%d %H:%M:%S")" >> $GITHUB_ENV
         echo "tag_name=$(date +%Y%m%d)" >> $GITHUB_ENV
 
-    - name: Load custom feeds
-      run: |
-        [ -e files ] && mv files openwrt/files
+    #- name: Load custom feeds
+     # run: |
+    #    [ -e files ] && mv files openwrt/files
                       
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
