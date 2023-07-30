@@ -156,6 +156,7 @@ CONFIG_PACKAGE_luci-app-dockerman=y
 CONFIG_PACKAGE_luci-app-nps=y
 # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng is not set
 # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui is not set
+CONFIG_PACKAGE_luci-app-samba=y
 CONFIG_PACKAGE_luci-app-ttyd=y
 # CONFIG_PACKAGE_luci-app-turboacc is not set
 # CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_BBR_CCA is not set
@@ -170,6 +171,7 @@ CONFIG_PACKAGE_luci-i18n-amlogic-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-dockerman-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-nps-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-samba-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-uhttpd-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-zerotier-zh-cn=y
@@ -222,8 +224,8 @@ CONFIG_PACKAGE_perlbase-xsloader=y
 CONFIG_PACKAGE_pv=y
 CONFIG_PACKAGE_resolveip=y
 CONFIG_PACKAGE_runc=y
-CONFIG_PACKAGE_shadowsocks-libev-ss-local=y
-CONFIG_PACKAGE_shadowsocks-libev-ss-redir=y
+CONFIG_PACKAGE_samba36-server=y
+CONFIG_PACKAGE_SAMBA_MAX_DEBUG_LEVEL=-1
 CONFIG_PACKAGE_tar=y
 CONFIG_PACKAGE_terminfo=y
 CONFIG_PACKAGE_tini=y
@@ -234,8 +236,6 @@ CONFIG_PACKAGE_ucode-mod-ubus=m
 CONFIG_PACKAGE_ucode-mod-uci=m
 CONFIG_PACKAGE_unzip=y
 CONFIG_PACKAGE_uuidgen=y
-CONFIG_PACKAGE_v2ray-geoip=y
-CONFIG_PACKAGE_v2ray-geosite=y
 # CONFIG_PACKAGE_vsftpd-alt is not set
 # CONFIG_PACKAGE_wol is not set
 CONFIG_PACKAGE_xfs-fsck=y
