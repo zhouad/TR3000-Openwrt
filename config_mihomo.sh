@@ -35,7 +35,6 @@ CONFIG_PACKAGE_kmod-tun=y
 CONFIG_PACKAGE_libatomic=y
 CONFIG_PACKAGE_libbpf=y
 CONFIG_PACKAGE_libcap=y
-# CONFIG_PACKAGE_libcap-ng is not set
 CONFIG_PACKAGE_libelf=y
 CONFIG_PACKAGE_libev=y
 CONFIG_PACKAGE_libipset=y
@@ -46,7 +45,6 @@ CONFIG_PACKAGE_libsodium=y
 CONFIG_PACKAGE_libstdcpp=y
 CONFIG_PACKAGE_libuci-lua=y
 CONFIG_PACKAGE_libudns=y
-# CONFIG_PACKAGE_libuuid is not set
 CONFIG_PACKAGE_libuv=y
 CONFIG_PACKAGE_libwebsockets-full=y
 # CONFIG_PACKAGE_libxtables is not set
@@ -54,29 +52,16 @@ CONFIG_PACKAGE_libwebsockets-full=y
 # CONFIG_PACKAGE_luci-app-control-webrestriction is not set
 # CONFIG_PACKAGE_luci-app-control-weburl is not set
 # CONFIG_PACKAGE_luci-app-ddns is not set
-CONFIG_PACKAGE_luci-app-passwall=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Haproxy=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Hysteria=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Client=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Client=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Rust_Client=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Simple_Obfs=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_SingBox=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_V2ray_Geodata=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_V2ray_Geoview=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_V2ray_Plugin=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Xray=y
-CONFIG_PACKAGE_luci-app-passwall_Nftables_Transparent_Proxy=y
+CONFIG_PACKAGE_luci-app-mihomo=y
 # CONFIG_PACKAGE_luci-app-ramfree is not set
 # CONFIG_PACKAGE_luci-app-timecontrol is not set
 CONFIG_PACKAGE_luci-app-ttyd=y
 # CONFIG_PACKAGE_luci-app-upnp is not set
-CONFIG_PACKAGE_luci-i18n-passwall-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-mihomo-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
 CONFIG_PACKAGE_luci-theme-argon=y
 CONFIG_PACKAGE_microsocks=y
-# CONFIG_PACKAGE_miniupnpd-nftables is not set
+CONFIG_PACKAGE_mihomo=y
 CONFIG_PACKAGE_resolveip=y
 CONFIG_PACKAGE_shadowsocks-libev-ss-local=y
 CONFIG_PACKAGE_shadowsocks-libev-ss-redir=y
@@ -93,6 +78,8 @@ CONFIG_PACKAGE_v2ray-geoip=y
 CONFIG_PACKAGE_v2ray-geosite=y
 CONFIG_PACKAGE_v2ray-plugin=y
 CONFIG_PACKAGE_xray-core=y
+CONFIG_PACKAGE_xray-plugin=y
+CONFIG_PACKAGE_yq=y
 CONFIG_SING_BOX_WITH_CLASH_API=y
 CONFIG_SING_BOX_WITH_DHCP=y
 CONFIG_SING_BOX_WITH_ECH=y
@@ -104,7 +91,8 @@ CONFIG_boost-compile-visibility-hidden=y
 CONFIG_boost-runtime-shared=y
 CONFIG_boost-static-and-shared-libs=y
 CONFIG_boost-variant-release=y
-# CONFIG_PACKAGE_libcares is not set
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Server is not set
-# CONFIG_PACKAGE_shadowsocks-libev-ss-server is not set
+CONFIG_PACKAGE_libcap-ng=y
+# CONFIG_PACKAGE_libcap-ng-bin is not set
+CONFIG_PACKAGE_libuuid=y
+CONFIG_PACKAGE_miniupnpd-nftables=y
 EOF
