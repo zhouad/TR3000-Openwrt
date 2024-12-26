@@ -5,10 +5,10 @@ on:
 
 env:
   REPO_URL: https://github.com/Lienol/openwrt
-  REPO_BRANCH: 24.10
+  REPO_BRANCH: 23.05
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
-  CONFIG_SH: config.sh
+  CONFIG_SH: mihomo.sh
   UPLOAD_FIRMWARE: true
   TZ: Asia/Shanghai
   
@@ -43,7 +43,7 @@ jobs:
 
     - name: Clone source code
       run: |
-        git clone -b 24.10 --single-branch $REPO_URL openwrt
+        git clone -b $REPO_BRANCH --single-branch $REPO_URL openwrt
         cd openwrt
         useVersionInfo=$(git show -s --date=short --format="date: %cd<br/>commit: %s<br/>commit hash: %H")
         echo "useVersionInfo=$useVersionInfo" >> $GITHUB_ENV
@@ -118,7 +118,7 @@ jobs:
       uses: ncipollo/release-action@v1
       with:
         tag: ${{ env.tag_name }}
-        name: Cudy_TR3000_Immortalwrt_${{ env.REPO_BRANCH }} | ${{ env.DATE }}
+        name: TR3000-Openwrt${{ env.REPO_BRANCH }}-${{ env.CONFIG_SH }} | ${{ env.DATE }}
         allowUpdates: true
         artifacts: "${{ env.FIRMWARE }}/*.*,${{ env.PACKAGED_OUTPUTPATH }}/*.*"
         token: ${{ secrets.RELEASES_TOKEN }}
