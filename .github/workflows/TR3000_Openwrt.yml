@@ -43,7 +43,7 @@ jobs:
 
     - name: Clone source code
       run: |
-        git clone -b $REPO_BRANCH --single-branch $REPO_URL openwrt
+        git clone -b 24.10 --single-branch $REPO_URL openwrt
         cd openwrt
         useVersionInfo=$(git show -s --date=short --format="date: %cd<br/>commit: %s<br/>commit hash: %H")
         echo "useVersionInfo=$useVersionInfo" >> $GITHUB_ENV
