@@ -8,7 +8,7 @@ env:
   REPO_BRANCH: 23.05
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
-  CONFIG_SH: mihomo.sh
+  CONFIG_SH: mihomo
   UPLOAD_FIRMWARE: true
   TZ: Asia/Shanghai
   
