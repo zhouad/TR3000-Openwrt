@@ -1,11 +1,11 @@
-name: TR3000_Immortalwrt 
+name: TR3000_Openwrt 
 
 on:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/immortalwrt/immortalwrt
-  REPO_BRANCH: openwrt-24.10
+  REPO_URL: https://github.com/Lienol/openwrt
+  REPO_BRANCH: 24.10
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
   CONFIG_SH: config.sh
