@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/Lienol/openwrt
-  REPO_BRANCH: 23.05
+  REPO_URL: https://github.com/yho2ds/immortalwrt-tr3000-112m
+  REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
   CONFIG_SH: passwall
@@ -58,7 +58,6 @@ jobs:
         git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/passwall-packages
         cp -rf package/passwall-packages/* package/luci-app-passwall
         rm -rf package/passwall-packages
-#       git clone https://github.com/morytyann/OpenWrt-mihomo.git package/luci-app-mihomo
         
     - name: Update & Install feeds
       run: |
@@ -67,7 +66,7 @@ jobs:
        rm -rf feeds/packages/lang/golang
        git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
        ./scripts/feeds install -a
-       sed -i 's/luci-theme-bootstrap/luci-theme-argon/' feeds/luci/collections/luci/Makefile
+ #      sed -i 's/luci-theme-bootstrap/luci-theme-argon/' feeds/luci/collections/luci/Makefile
 
     - name: Load custom configuration
       run: |
