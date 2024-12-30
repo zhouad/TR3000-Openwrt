@@ -5,7 +5,7 @@ on:
 
 env:
   REPO_URL: https://github.com/yho2ds/immortalwrt-tr3000-112m
-  REPO_BRANCH: main
+  REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
   CONFIG_SH: passwall
